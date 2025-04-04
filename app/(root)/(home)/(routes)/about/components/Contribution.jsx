@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandTelegram } from "@tabler/icons-react";
+
 const Contribution = () => {
   const contributeText = {
-    title: "Paschub is an open source project built with 💖",
+    title: "SPIDEYHUB is an open source project built with 💖",
     desc: "Open-source, passion-fueled project. Revolutionizing education with an intuitive platform for seamless student-teacher interaction.",
-    subDesc:
-      "We highly appreciate any feedback or contribution that could help us improve.",
   };
+
   return (
     <section className="w-full mt-3 ">
       <div className="flex justify-center items-center flex-col-reverse md:flex-row">
@@ -27,9 +27,19 @@ const Contribution = () => {
             {contributeText.title}
           </h3>
           <p>{contributeText.desc}</p>
-          <p className="mt-2">{contributeText.subDesc}</p>
+          <div className="mt-2">
+            <p>We highly appreciate any feedback or contribution that could help us improve.</p>
+            <Link
+              href="https://t.me/hacker_x_official_777"
+              target="_blank"
+              className="flex hover:text-white items-center justify-center mt-3 text-2xl gap-1 text-gray-400"
+            >
+              <IconBrandTelegram size={30} />
+              <p>Telegram</p>
+            </Link>
+          </div>
           <Link
-            href="https://github.com/SHABIN-K/Studydrive"
+            href="https://github.com/Spideyofficial777"
             target="_blank"
             className="flex hover:text-white items-center justify-center mt-3 text-2xl gap-1 text-gray-400"
           >
