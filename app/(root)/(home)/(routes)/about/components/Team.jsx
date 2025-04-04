@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const SocialLinks = ({
   githubUsername,
-  xUsername,
+  telegramUsername,
   linkedinUsername,
   instagramUsername,
 }) => {
@@ -22,11 +22,11 @@ const SocialLinks = ({
           url={`https://github.com/${githubUsername}`}
         />
       )}
-      {xUsername && (
+      {telegramUsername && (
         <SocialLink
           icon={<IconBrandX className="social-icon" />}
-          tooltip="twitter"
-          url={`https://twitter.com/${xUsername}`}
+          tooltip="telegram"
+          url={`https://t.me/${telegramUsername}`}
         />
       )}
       {linkedinUsername && (
@@ -63,35 +63,35 @@ const SocialLink = ({ icon, tooltip, url }) => {
 const Team = () => {
   const teamMembers = [
     {
-      name: "Mohammed shabin k",
+      name: "Spidey official",
       role: "Team lead | software Engineer",
       img: "/team/member-1.jpeg",
-      githubUsername: "SHABIN-K",
-      xUsername: "shabink9",
-      linkedinUsername: "-shabink",
+      githubUsername: "SPIDEYOFFICIAL777",
+      telegramUsername: "hacker_x_official_777",
+      lnstagramUsername: "Spidey_official_777",
     },
     {
-      name: "Muhammad Muzammil k",
+      name: "Gaming hatyar",
       role: "Frontend developer",
       img: "/team/member-2.jpeg",
-      githubUsername: "muzammilk03",
-      instagramUsername: "muzammilsidhique",
-      linkedinUsername: "muhammed-muzammil-308819281",
+      githubUsername: "Spideyofficial777",
+      instagramUsername: "Spidey_official_777",
+      telegramUsername: "+QVmLP_hlHNw3M2I1",
     },
     {
-      name: "Mohammed Nisham nk",
+      name: "Spidey official",
       role: "Visual designer",
       img: "/team/member-5.jpg",
-      githubUsername: "Nisham-N-K",
-      instagramUsername: "nisham_nk",
-      linkedinUsername: "mohammed-nisham-nk-b9a05b267",
+      githubUsername: "spideyofficial777",
+      instagramUsername: "Spidey_official_777",
+      telegramUsername: "hacker_x_official_777",
     },
     {
-      name: "Mufasil",
+      name: "unknown",
       role: "Visual designer",
       img: "/team/member-3.jpeg",
-      instagramUsername: "mufasill_",
-      linkedinUsername: "Mufasil.Muthu",
+      instagramUsername: "spidey_official_777",
+      telegramUsername: "SpideyCinemaX_AI_Bot",
     },
     {
       name: "Shefna N",
